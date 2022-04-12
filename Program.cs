@@ -6,33 +6,34 @@ namespace Loops
     {
         static void Main(string[] args)
         {
-            int number1;
-            int number2;
+            int min;
+            int max;
+            int input;
             //Reads low number
             Console.WriteLine("enter a number");
-            while (!Int32.TryParse(Console.ReadLine(), out number1))
+            while (!Int32.TryParse(Console.ReadLine(), out min))
                 Console.WriteLine("Invalid number, try again.");
-            Console.WriteLine($"Thanks for {number1}!");
+            Console.WriteLine($"Thanks for {min}!");
             //Reads high number
             Console.WriteLine("enter a larger number:");
-            while (!Int32.TryParse(Console.ReadLine(), out number2))
+            while (!Int32.TryParse(Console.ReadLine(), out max))
                 Console.WriteLine("Invalid number, try again.");
-            Console.WriteLine($"Thanks for {number2}!");
+            Console.WriteLine($"Thanks for {max}!");
             //Reads number in between
-            Console.WriteLine($"Enter number in between {number1} and {number2}");
-            do while
-            
-
-
-            while (number2 )
-            
-            
-            
-            while (!Int32.TryParse(Console.ReadLine(), out number))
+            Console.WriteLine($"Enter number in between {min} and {max}");
+            do
             {
-                Console.WriteLine("Invalid integer, try again.");
-                Console.WriteLine($"Thanks for {number}!");
-            }
+
+
+                while (!Int32.TryParse(Console.ReadLine(), out input))
+                    Console.WriteLine("Invalid number, try again.");
+
+
+
+
+            } while (input <= min-1 || input >= max+1);
+            //correct message
+            Console.WriteLine($"correct you entered {input} with in range of {min} and {max}");
         }
     }
 }
