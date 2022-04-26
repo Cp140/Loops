@@ -23,7 +23,7 @@ namespace Loops
                 while (!Int32.TryParse(Console.ReadLine(), out max))
                     Console.WriteLine("Invalid number, try again.");
             
-                if (max <= min)
+                if (max <= min + 1 )
                     Console.WriteLine("Error number too low!");
             
             
